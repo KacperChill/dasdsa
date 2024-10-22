@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serca Drzew</title>
+    <style>
+        body {
+            font-family: 'Calibri', sans-serif;
+            background-color: #f5f5dc; /* Jasny żółty */
+            margin: 0;
+            padding: 0;
+            color: #4b5320; /* Zielony */
+        }
+        header {
+            background-color: #8b4513; /* Brązowy */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #8b4513;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+        nav a:hover {
+            background-color: #6a3a0f;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #8b4513;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .drzewa-img {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .drzewa-img img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+        }
+        .kontakt-form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+        .kontakt-form input, .kontakt-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #8b4513;
+        }
+        .kontakt-form input[type="submit"] {
+            background-color: #4b5320;
+            color: white;
+            cursor: pointer;
+        }
+        .mapa iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Serca Drzew</h1>
+        <p>Specjaliści od hodowli polskich drzew</p>
+    </header>
+
+    <nav>
+        <a href="#home">Strona główna</a>
+        <a href="#o-nas">O nas</a>
+        <a href="#uslugi">Usługi</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <section id="home">
+        <h2>Witamy w Serca Drzew!</h2>
+        <p>Nasza firma zajmuje się hodowlą polskich drzew od 2022 roku. Oferujemy różnorodne gatunki drzew idealne do ogrodów, lasów i parków. Kup teraz i ciesz się pięknem natury w Twoim otoczeniu!</p>
+        <div class="drzewa-img">
+            <!-- Zdjęcia drzew, które możesz podmienić -->
+            <img src="drzewo1.jpg" alt="Drzewo 1">
+            <img src="drzewo2.jpg" alt="Drzewo 2">
+            <img src="drzewo3.jpg" alt="Drzewo 3">
+            <img src="drzewo4.jpg" alt="Drzewo 4">
+            <img src="drzewo5.jpg" alt="Drzewo 5">
+            <img src="drzewo6.jpg" alt="Drzewo 6">
+            <img src="drzewo7.jpg" alt="Drzewo 7">
+            <img src="drzewo8.jpg" alt="Drzewo 8">
+            <img src="drzewo9.jpg" alt="Drzewo 9">
+            <img src="drzewo10.jpg" alt="Drzewo 10">
+        </div>
+    </section>
+
+    <section id="o-nas">
+        <h2>O nas</h2>
+        <p>Nasza firma, założona w 2022 roku, specjalizuje się w hodowli i sprzedaży drzew polskich gatunków. Nasza pasja do przyrody napędza nas do oferowania klientom najlepszych drzew, które będą rosły przez pokolenia.</p>
+    </section>
+
+    <section id="uslugi">
+        <h2>Nasze usługi</h2>
+        <ul>
+            <li>Hodowla polskich gatunków drzew</li>
+            <li>Sprzedaż drzew do ogrodów i parków</li>
+            <li>Doradztwo w zakresie doboru drzew</li>
+        </ul>
+    </section>
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Skontaktuj się z nami, aby dowiedzieć się więcej o naszej ofercie:</p>
+        <p><strong>Telefon:</strong> 537-968-471</p>
+        <p><strong>Email:</strong> <a href="mailto:kacperss1904@gmail.com">kacperss1904@gmail.com</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com">facebook.com/sercadrzew</a></p>
+
+        <h3>Formularz kontaktowy</h3>
+        <form class="kontakt-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Twoje imię" required>
+            <input type="email" name="email" placeholder="Twój email" required>
+            <textarea name="message" rows="4" placeholder="Twoja wiadomość" required></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+
+        <h3>Nasza lokalizacja</h3>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.37580512844!2d19.85864039776344!3d52.22977064714988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecaa89f60e499%3A0x729bf84be4e2aa8d!2sPolska!5e0!3m2!1spl!2spl!4v1698141149989!5m2!1spl!2spl" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Serca Drzew | Hodowla polskich drzew | Wszelkie prawa zastrzeżone</p>
+    </footer>
+
+</body>
+</html>
